@@ -10,4 +10,9 @@ class SongsController < ApplicationController
   def new
     @song = Song.new(song_params)
   end
+
+  private
+
+  def song_params
+  end
 end
