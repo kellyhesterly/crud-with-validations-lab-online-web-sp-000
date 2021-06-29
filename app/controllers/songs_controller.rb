@@ -38,6 +38,6 @@ class SongsController < ApplicationController
   private
 
   def song_params
-    params.permit(parmas)
+    params.permit(params)
   end
 end
