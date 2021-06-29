@@ -35,7 +35,10 @@ class SongsController < ApplicationController
     end
   end
 
-  def destroy
+  def delete
+    @song = Song.find(params[:id])
+    @song.destroy
+    render :index
   end
 
   private
