@@ -8,8 +8,7 @@ class SongsController < ApplicationController
   end
 
   def new
-    @song = Song.new(song_params)
-    render :new
+    @song = Song.new
   end
 
   def create
