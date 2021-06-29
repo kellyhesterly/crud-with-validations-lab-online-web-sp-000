@@ -11,6 +11,9 @@ class SongsController < ApplicationController
     @song = Song.new(song_params)
   end
 
+  def create
+  end
+
   def edit
     @song = Song.find(params[:id])
   end
